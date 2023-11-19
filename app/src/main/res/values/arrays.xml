@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="your_array_name">
+        <item>Normal</item>
+        <item>Good</item>
+
+        <!-- Add more items as needed -->
+    </array>
+    <array name="color_array">
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <!-- Add more items as needed -->
+    </array>
+</resources>

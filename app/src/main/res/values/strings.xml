@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProjectPlanner2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quotation_generator">Quotation Generator</string>
+    <string name="paint_area_m_2">Paint Area (m^2):</string>
+    <string name="types_of_paint">Types Of Paint:</string>
+    <string name="color_of_paint">Color Of Paint:</string>
+    <string name="time_required">Time required:</string>
+    <string name="level_of_surface_preperation">Level of surface Preperation:</string>
+    <string name="m_2">m^2</string>
+    <string name="_0">0</string>
+    <string name="days">Days</string>
+</resources>
