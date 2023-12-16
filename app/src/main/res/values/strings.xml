@@ -6,9 +6,17 @@
     <string name="paint_area_m_2">Paint Area (m^2):</string>
     <string name="types_of_paint">Types Of Paint:</string>
     <string name="color_of_paint">Color Of Paint:</string>
-    <string name="time_required">Time required:</string>
+    <string name="time_required">Hours required:</string>
     <string name="level_of_surface_preperation">Level of surface Preperation:</string>
     <string name="m_2">m^2</string>
     <string name="_0">0</string>
-    <string name="days">Days</string>
+    <string name="days">Hours</string>
+    <string name="report_generator">Report Generator</string>
+    <string name="download">Download</string>
+    <string name="generate_quote">Generate Quote</string>
+    <string name="submit">     Submit     </string>
+    <string name="date">Date:</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="customer_information">Customer Information</string>
 </resources>

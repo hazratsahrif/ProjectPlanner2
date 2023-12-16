@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.projectplanner2.presentation.tabs.HomeFragment;
 import com.example.projectplanner2.presentation.tabs.QuoteFragment;
@@ -35,58 +36,31 @@ import java.util.List;
 //        return fragmentList.size();
 //    }
 //}
-public class ViewPagerAdapter extends FragmentPagerAdapter {
-
-    public ViewPagerAdapter(FragmentManager fm) {
-        super(fm);
+public class ViewPagerAdapter extends FragmentStatePagerAdapter {
+    private final List<Fragment> fragmentList = new ArrayList<>();
+    private final List<String> fragmentTitleList = new ArrayList<>();
+    public ViewPagerAdapter(@NonNull FragmentManager fm, int behavior) {
+        super(fm, behavior);
     }
 
+    public void addFragment(Fragment fragment, String title) {
+        fragmentList.add(fragment);
+        fragmentTitleList.add(title);
+    }
+
+    @NonNull
     @Override
     public Fragment getItem(int position) {
-        Fragment fragment = null;
-        if (position == 0)
-        {
-            fragment = new HomeFragment();
-        }
-        else if (position == 1)
-        {
-            fragment = new QuoteFragment();
-        }
-        else if (position == 2)
-        {
-            fragment = new ReportFragment();
-        }
-        else if (position == 3)
-        {
-            fragment = new UpdateFragment();
-        }
-        return fragment;
+        return fragmentList.get(position);
     }
 
     @Override
     public int getCount() {
-        return 4;
+        return fragmentList.size();
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        String title = null;
-        if (position == 0)
-        {
-            title = "Home";
-        }
-        else if (position == 1)
-        {
-            title = "Quote";
-        }
-        else if (position == 2)
-        {
-            title = "Report";
-        }
-        else if (position == 3)
-        {
-            title = "Update";
-        }
-        return title;
+        return fragmentTitleList.get(position);
     }
 }
